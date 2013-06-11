@@ -11,18 +11,18 @@
         }
     ],
     "authors": [
- 	{
-	    "name" : "Monte, Régis",
-	    "role" : "auteur",
-	    "comment" : "version interstices en Java"
-	},
+     {
+        "name" : "Monte, Régis",
+        "role" : "auteur",
+        "comment" : "version interstices en Java"
+    },
         {
             "name": "Lehmann Dussout, Hugo",
             "role": "auteur",
             "comment": "version HTLM5/JS"
         },
         {
-	  "name": "www.centralelilleprojets.fr",
+            "name": "www.centralelilleprojets.fr",
             "role": "producteur"
         }
     ],
