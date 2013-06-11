@@ -1,0 +1,41 @@
+{
+    "name": "Alignement de séquences",
+    "width": "800px",
+    "height": "600px",
+      "link": "http://interstices.info/alignement-sequences",
+      "comment": "Démonstration des mécanismes algorithmiques de l'alignement de séquences en bio-informatique",
+    "links": [
+        {
+            "title": "Document qui document ce grain",
+            "uri": "http://interstices.info/alignement-sequences"
+        }
+    ],
+    "authors": [
+ 	{
+	    "name" : "Monte, Régis",
+	    "role" : "auteur",
+	    "comment" : "version interstices en Java"
+	},
+        {
+            "name": "Lehmann Dussout, Hugo",
+            "role": "auteur",
+            "comment": "version HTLM5/JS"
+        },
+        {
+	  "name": "www.centralelilleprojets.fr",
+            "role": "producteur"
+        }
+    ],
+    "licenses": [
+        {
+            "name": "CC BY-NC-SA",
+            "uri": "http://creativecommons.org/licenses/by-nc-sa/3.0/fr",
+            "comment": "s'applique aux documents"
+        },
+        {
+            "name": "CeCILL-C",
+            "uri": "http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html",
+            "comment": "s'applique au code source"
+        }
+    ]
+}

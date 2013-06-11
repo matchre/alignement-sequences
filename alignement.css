@@ -1,0 +1,224 @@
+/*
+
+CSS pour le grain alignement
+
+*/
+
+/*
+
+Style des blocs principaux
+
+*/
+
+/* div général */
+#grain-alignement {
+    /* boite */
+    width: 780px;
+    height: 600px;
+    margin: auto;
+    /* Contenu */
+    background-color: #CCC;
+    position: relative;
+    font-family: arial;
+    font-size: 13px;
+}
+
+/* Tous les div principaux*/
+#grain-alignement > div {
+    /* boite */
+    position: absolute;
+    /* Contenu */
+}
+
+/* div des étapes */
+#grain-alignement-etapes {
+    /* boite */
+    top: 5px;
+    left: 5px;
+    width: 235px;
+}
+#grain-alignement-etapes .grain-alignement-contenu {
+    height: 108px;
+}
+
+/* div des alignements courants */
+#grain-alignement-alignements {
+    /* boite */
+    top: 164px;
+    left: 5px;
+    width: 235px;
+}
+#grain-alignement-alignements .grain-alignement-contenu {
+    height: 226px;    
+}
+
+/* div de la matrice */
+#grain-alignement-matrice {
+    /* boite */
+    display: none;
+    top: 272px;
+    left: 57px;
+    width: 126px;
+}
+#grain-alignement-matrice .grain-alignement-contenu {
+    height: 105px;    
+    display: block;
+    padding: 0px;
+}
+#grain-alignement-matrice td, #grain-alignement-matrice th {
+    width: 20px;
+    height: 16px;
+    text-align: center;
+}
+#grain-alignement-matrice.grain-alignement-type-20 {
+    top: 75px;
+    left: 140px;
+    width: 510px;
+    z-index: 1;
+}
+#grain-alignement-matrice.grain-alignement-type-20 .grain-alignement-contenu {
+    height: 425px;
+}
+
+/* div des chemins */
+#grain-alignement-chemins {
+    /* boite */
+    top: 5px;
+    right: 5px;
+    width: 530px;
+}
+#grain-alignement-chemins .grain-alignement-contenu {
+    height: 385px;
+}
+
+/* div du cout optimal */
+#grain-alignement-optimal {
+    /* boite */
+    bottom: 5px;
+    left: 5px;
+    width: 235px;
+}
+#grain-alignement-optimal .grain-alignement-contenu {
+    height: 71px;
+    padding-top: 42px;
+    padding-left: 20px;
+    font-size: 23px;
+}
+
+/* div des messages */
+#grain-alignement-messages {
+    /* boite */
+    bottom: 5px;
+    right: 5px;
+    width: 530px;
+}
+#grain-alignement-messages .grain-alignement-contenu {
+    height: 108px;
+}
+
+/*
+
+Style des éléments des blocs
+
+*/
+
+/* Titre des blocs */
+.grain-alignement-titre {
+    /* Boite */
+    border: solid 2px black;
+    border-bottom: none;
+    border-radius: 5px 5px 0px 0px;
+    /* Contenu */
+    padding: 7px;
+    background-color: #5f82cc;
+    color: white;
+    font-weight: bold;
+}
+
+/* Contenu des blocs */
+.grain-alignement-contenu {
+    /* Boite */
+    border: solid 2px black;
+    border-radius: 0px 0px 5px 5px;
+    /* Contenu */
+    padding: 5px;
+    background-color: white;
+    overflow: auto;
+}
+
+/* Menus des barres de titre*/
+.grain-alignement-menu {
+    /* Boite */
+    position: absolute;
+    right: 7px;
+    top: 5px;}
+.grain-alignement-menu a {
+    /* Boite */
+    height: 20px;
+    border: solid 1px black;
+    display: inline-block;
+    /* Contenu */
+    padding: 1px;
+}
+
+/* Liste des étapes */
+#grain-alignement-listeEtapes a {
+    /* Boite */
+    display: block;
+    border: solid 1px white;
+    /* Contenu */
+    padding: 1px 5px 1px 5px;
+    text-decoration: none;
+    color: black;
+}
+#grain-alignement-listeEtapes a.grain-alignement-etapeActuelle {
+    border-color: black;
+    background-color: #CCC;
+}
+
+/* Liste des alignements */
+#grain-alignement-listeAlignements table {
+    font-family: monospace;
+    border: solid 2px blue;
+    display: block;
+    height: 45px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+#grain-alignement-listeAlignements table tr:first-child {
+    color: green;
+}
+#grain-alignement-listeAlignements table tr:last-child {
+    color: red;
+}
+.grain-alignement-pointer {
+    cursor: pointer;
+}
+.grain-alignement-selection {
+    background-color: #CCC;
+}
+
+
+/*
+Lanceur
+*/
+
+#grain-alignement-form {
+    position: relative;
+    border: solid 2px black;
+    background-color: white;
+    width: 400px;
+}
+#grain-alignement-form label{
+    display: block;
+    padding: 4px;
+}
+#grain-alignement-form input, #grain-alignement-form select{
+    position: absolute;
+    left: 200px
+}
+#grain-alignement-form input[type="text"] {
+    text-transform: uppercase;
+}
