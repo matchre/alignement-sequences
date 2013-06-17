@@ -1,0 +1,1 @@
+NOTE : il est toujours possible de mettre le formulaire de paramétrage dans une page séparée. Le paramétrage se fait à l'aide de la méthode get, c'est-à-dire que le grain regarde les informations présentes dans la barre d'adresse. Par exemple alignement.html?etape=2 lancera le grain directement à l'étape 2.
