@@ -1,7 +1,7 @@
 {
     "name": "Alignement de séquences",
     "width": "800px",
-    "height": "600px",
+    "height": "920px",
       "link": "http://interstices.info/alignement-sequences",
       "comment": "Démonstration des mécanismes algorithmiques de l'alignement de séquences en bio-informatique",
     "links": [
