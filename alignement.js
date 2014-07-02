@@ -53,8 +53,8 @@ alignement = {
     changerEtape: function (n) {
         this.etape = n;
         this.afficherInstruction();
-        $( "#grain-alignement-listeEtapes a" ).removeClass("grain-alignement-etapeActuelle");
-        $( "#grain-alignement-listeEtapes a:nth-child("+n+")" ).addClass("grain-alignement-etapeActuelle");
+        $( "#grain-alignement-listeEtapes li" ).removeClass("grain-alignement-etapeActuelle");
+        $( "#grain-alignement-listeEtapes li:nth-child("+n+")").addClass("grain-alignement-etapeActuelle");
         switch(n) {
             case 1:
                 this.initEtape1();
@@ -119,6 +119,9 @@ alignement = {
                 case 2: this.afficherInformation("Insertion d'un <b>gap</b> dans la seconde séquence (en colonnes)<br/>Coût : "+this.calculCout(xx, yy, dir)); break;
                 case 3: this.afficherInformation("Mise en correspondance du caractère "+this.x[xx-1]+" et du caractère "+this.y[yy-1]+" <br/>Coût : "+this.calculCout(xx, yy, dir))
             }
+        }
+        if(xx == this.x.length && yy == this.y.length) {
+            $( "#etape2" ).show();
         }
     },
     /** Retour */
@@ -193,8 +196,10 @@ alignement = {
                         this.afficherInformation("Mise en correspondance du caractère "+this.x[xx-1]+" et du caractère "+this.y[yy-1]+" <br/>Coût : "+this.calculCout(xx, yy, dir))
                 }
                 if(xx == this.x.length && yy == this.y.length) {
-                    if(score == this.optimal)
-                        this.afficherInformation("Bravo ! Vous avez trouvé un alignement optimal !")
+                    if (score == this.optimal) {
+                            this.afficherInformation("Bravo ! Vous avez trouvé un alignement optimal !");
+                            $( "#etape3" ).show();
+                    }
                     else
                         this.afficherInformation("Le coût de votre alignement "+score+" est supérieur à celui de l'alignement optimal "+this.optimal+".")
                 }
@@ -244,8 +249,10 @@ alignement = {
                 if(this.posX != this.x.length || this.posY != this.y.length) {
                     this.avance3();
                 }
-                else
+                else {
                     n = 0;
+                    $( "#etape4" ).show();
+                }
             } while(n == 2)
         }
         if(n < 0) {
@@ -353,8 +360,10 @@ alignement = {
                 this.afficherAlignements();
                 this.actualiserGrille();
                 this.afficherInformation("");
-                if(xx == 0 && yy == 0)
+                if(xx == 0 && yy == 0) {
                     this.afficherInformation("Bravo, vous avez trouvé l'alignement optimal !");
+                    $( "#etape5" ).show();
+                }
             }
             else
                 this.afficherInformation("Le noeud que vous avez selectionné ne peut pas faire partie du chemin optimal, car le coût de transition est trop élevé.<br/>" + this.scores[xx][yy] + " + " + this.calculCout(x, y, dir) +" > " + this.scores[x][y])
@@ -572,6 +581,9 @@ alignement = {
          */
         this.initEtape3();
         this.next3(2);
+        for (var i = 2; i<= 5; i = i + 1) {
+            $( "li#etape" + i ).hide();
+        }
         this.optimal = this.scores[this.x.length][this.y.length];
         $( "#grain-alignement-optimal .grain-alignement-contenu" ).html(this.optimal.toFixed(1));
     },

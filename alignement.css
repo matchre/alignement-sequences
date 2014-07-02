@@ -162,18 +162,24 @@ Style des éléments des blocs
 }
 
 /* Liste des étapes */
-#grain-alignement-listeEtapes a {
+#grain-alignement-listeEtapes li {
     /* Boite */
-    display: block;
     border: solid 1px white;
     /* Contenu */
     padding: 1px 5px 1px 5px;
+}
+#grain-alignement-listeEtapes li.grain-alignement-etapeActuelle {
+    border-color: black;
+    background-color: #CCC;
+}
+#grain-alignement-listeEtapes li a {
     text-decoration: none;
     color: black;
 }
-#grain-alignement-listeEtapes a.grain-alignement-etapeActuelle {
-    border-color: black;
-    background-color: #CCC;
+#grain-alignement-listeEtapes ol {
+  padding-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* Liste des alignements */
