@@ -2,8 +2,8 @@
     "name": "Alignement de séquences",
     "width": "800px",
     "height": "920px",
-      "link": "http://interstices.info/alignement-sequences",
-      "comment": "Démonstration des mécanismes algorithmiques de l'alignement de séquences en bio-informatique",
+    "link": "http://interstices.info/alignement-sequences",
+    "comment": "Démonstration des mécanismes algorithmiques de l'alignement de séquences en bio-informatique",
     "links": [
         {
             "title": "Document qui document ce grain",
@@ -11,11 +11,11 @@
         }
     ],
     "authors": [
-     {
-        "name" : "Monte, Régis",
-        "role" : "auteur",
-        "comment" : "version interstices en Java"
-    },
+        {
+            "name": "Monte, Régis",
+            "role": "auteur",
+            "comment": "version interstices en Java"
+        },
         {
             "name": "Lehmann Dussout, Hugo",
             "role": "auteur",
