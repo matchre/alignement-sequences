@@ -642,7 +642,7 @@ var alignement = {
      */
     initCanvas: function () {
         'use strict';
-        var i, j, x, y, xx, yy, couleur, h, w;
+        var i, j, couleur, h, w;
         /*
          * Parametres du canvas
          */
@@ -766,7 +766,7 @@ var alignement = {
         'use strict';
         this.canvas.drawLine({layer: true, group: "grille", strokeStyle: couleur, strokeWidth: 1, x1 : 40 + x * this.delta, y1: 40 + y * this.delta, x2: 40 + xx * this.delta, y2: 40 + yy * this.delta});
     },
-    afficherAlignements: function (ordre) {
+    afficherAlignements: function () {
         'use strict';
         var i, j, l, ll, alig, obj2,
             obj = $("#grain-alignement-listeAlignements").empty();
