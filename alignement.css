@@ -14,7 +14,7 @@ Style des blocs principaux
 #grain-alignement {
     /* boite */
     width: 780px;
-    height: 600px;
+    height: 700px;
     margin: auto;
     /* Contenu */
     background-color: #FFF;
@@ -99,7 +99,7 @@ Style des blocs principaux
     width: 235px;
 }
 #grain-alignement-optimal .grain-alignement-contenu {
-    height: 71px;
+    height: 171px;
     padding-top: 42px;
     padding-left: 20px;
     font-size: 23px;
@@ -113,7 +113,7 @@ Style des blocs principaux
     width: 530px;
 }
 #grain-alignement-messages .grain-alignement-contenu {
-    height: 108px;
+    height: 208px;
 }
 
 /*
