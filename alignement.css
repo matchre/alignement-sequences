@@ -17,7 +17,7 @@ Style des blocs principaux
     height: 600px;
     margin: auto;
     /* Contenu */
-    background-color: #CCC;
+    background-color: #FFF;
     position: relative;
     font-family: arial;
     font-size: 13px;
@@ -49,7 +49,7 @@ Style des blocs principaux
     width: 235px;
 }
 #grain-alignement-alignements .grain-alignement-contenu {
-    height: 226px;    
+    height: 226px;
 }
 
 /* div de la matrice */
@@ -61,7 +61,7 @@ Style des blocs principaux
     width: 126px;
 }
 #grain-alignement-matrice .grain-alignement-contenu {
-    height: 105px;    
+    height: 105px;
     display: block;
     padding: 0px;
 }
