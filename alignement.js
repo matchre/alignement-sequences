@@ -1,9 +1,9 @@
 /*global $: false */
 
 /*
- * 
+ *
  * Javascript pour le grain alignement
- * 
+ *
  */
 
 var alignement = {
@@ -87,13 +87,13 @@ var alignement = {
          */
         var menu = $("#grain-alignement-chemins-menu");
         menu.empty();
-        menu.append('<a href="javascript:alignement.next1(1)"><img src="alignement/droite.png" width="20" height="20" border="0" /></a> ');
-        menu.append('<a href="javascript:alignement.next1(2)"><img src="alignement/bas.png" width="20" height="20" border="0" /></a> ');
-        menu.append('<a href="javascript:alignement.next1(3)"><img src="alignement/diagonale.png" width="20" height="20" border="0" /></a> ');
+        menu.append('<a href="javascript:alignement.next1(1)" title="Tracer à droite"><img src="alignement/droite.png" width="20" height="20" border="0" /></a> ');
+        menu.append('<a href="javascript:alignement.next1(2)" title="Tracer en bas"><img src="alignement/bas.png" width="20" height="20" border="0" /></a> ');
+        menu.append('<a href="javascript:alignement.next1(3)" title="Tracer en diagonale"><img src="alignement/diagonale.png" width="20" height="20" border="0" /></a> ');
         menu.append(' &nbsp; ');
-        menu.append('<a href="javascript:alignement.retour1()"><img src="alignement/retour.png" width="20" height="20" border="0" /></a> ');
-        menu.append('<a href="javascript:alignement.initEtape1()"><img src="alignement/depart.png" width="20" height="20" border="0" /></a> ');
-        menu.append('<a href="javascript:alignement.afficherMatrice()"><img src="alignement/matrice.png" width="20" height="20" border="0" /></a> ');
+        menu.append('<a href="javascript:alignement.retour1()" title="Annuler dernier tracé"><img src="alignement/retour.png" width="20" height="20" border="0" /></a> ');
+        menu.append('<a href="javascript:alignement.initEtape1()" title="Réinitialiser tracé"><img src="alignement/depart.png" width="20" height="20" border="0" /></a> ');
+        menu.append('<a href="javascript:alignement.afficherMatrice()" title="Afficher matrice des coûts"><img src="alignement/matrice.png" width="20" height="20" border="0" /></a> ');
         menu.append(' &nbsp; ');
         /*
          * Initialisation du canvas
@@ -637,8 +637,8 @@ var alignement = {
         this.optimal = this.scores[this.x.length][this.y.length];
         $("#grain-alignement-optimal .grain-alignement-contenu").html(this.optimal.toFixed(1));
     },
-    /** 
-     * Initialisation du canvas 
+    /**
+     * Initialisation du canvas
      */
     initCanvas: function () {
         'use strict';
@@ -653,7 +653,7 @@ var alignement = {
         w = this.canvas.innerWidth() - 60;
         this.delta = Math.min(w / (this.x.length), h / (this.y.length));
         /*
-         * Affichage de la grille 
+         * Affichage de la grille
          */
         couleur = this.coutGap === 0 ? "#0C0" : "red";
         //Horizontal
@@ -685,7 +685,7 @@ var alignement = {
             }
         }
     },
-    /** 
+    /**
      * Initialisation de la matrice de score
      */
     initScores: function () {
@@ -815,4 +815,3 @@ alignement.instructions[2] = "Essayez de déterminer un chemin possédant le co�
 alignement.instructions[3] = "En cliquant sur les icônes du menu du cadre <b>Chemins</b>, vous pouvez suivre pas-à-pas la première phase de l'algorithme, qui consiste à calculer les coûts des chemins optimaux arrivant en chaque noeud de la grille.";
 alignement.instructions[4] = "La seconde phase de l'algorithme a pour but de retrouver le ou les alignements optimaux, en partant du noeud terminal (en bas à droite de la grille) et en remontant au noeud origine (en haut à gauche) en choisissant à chaque fois un noeud précédent, parmi les trois possibles, dont le coût est effectivement compatible avec l'optimalité du noeud courant.<br/>Il s'agit donc pour vous de tracer le chemin optimal, ou les chemins optimaux, en partant du noeud terminal, en utilisant les flèches du menu du cadre <b>Chemins</b>.";
 alignement.instructions[5] = "En cliquand sur les icônes du menu du cadre <b>Chemin</b>, vous pouvez suivre pas-à-pas la seconde phase de l'algorithme. Suivez plus particulièrement les étapes où plusieurs noeuds peuvent être choisis, reflétant l'existence de plusieurs alignements optimaux, donc de même coût.";
-
