@@ -448,7 +448,7 @@ var alignement = {
         /*
          * Détection des chemins optimaux
          */
-        this.optimaux = this.detectionOptimaux({x: this.x.length, y: this.y.length});
+        this.optimaux = this.detectionOptimaux([{x: this.x.length, y: this.y.length}]);
         this.afficherCouts();
         this.actualiserGrille();
         this.alignements = [];
