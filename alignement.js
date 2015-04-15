@@ -810,18 +810,18 @@ alignement.messages[2] = {titre: "Coût optimal", contenu: "Le coût d'un chemin
 /*
  * Liste des instructions
  */
-alignement.instructions[1] = "<b>Objectif</b> : tracer un chemin correspondant à un alignement de séquences et comparer son coût avec le coût optimal.<br><br>"
-    + "<b>Explications</b> : le tracé part du nœud origine (en haut à gauche) de la grille. Pour débuter le tracé d’un chemin, choisir l'une des trois directions possibles à l’aide des flèches en haut du cadre <b>Chemins</b>. Ce tracé détermine simultanément un alignement partiel affiché dans le cadre <b>Alignement courant</b>.<br>"
+alignement.instructions[1] = "<strong>Objectif</strong> : tracer un chemin correspondant à un alignement de séquences et comparer son coût avec le coût optimal.<br><br>"
+    + "<strong>Explications</strong> : le tracé part du nœud origine (en haut à gauche) de la grille. Pour débuter le tracé d’un chemin, choisir l'une des trois directions possibles à l’aide des flèches en haut du cadre <strong>Chemins</strong>. Ce tracé détermine simultanément un alignement partiel affiché dans le cadre <strong>Alignement courant</strong>.<br>"
     + "Le dernier nœud choisi s'affiche en jaune avec l'indication du coût de l'alignement partiel correspondant.</br>"
     + "Quand vous atteignez le nœud terminal (en bas à droite de la grille), vous avez déterminé un alignement des deux séquences.</br>"
-    + "Comparer le coût de cet alignement avec le coût optimal qui apparaît ci-contre, dans le cadre <b>Coût optimal</b>.<br>"
+    + "Comparer le coût de cet alignement avec le coût optimal qui apparaît ci-contre, dans le cadre <strong>Coût optimal</strong>.<br>"
     + "Vous pouvez revenir sur l'un des nœuds du chemin en cliquant sur la flèche orange retour et choisir une autre direction pour tenter d'obtenir un meilleur alignement.<br>Vous pouvez réinitialiser le chemin en cliquant sur la double flèche orange.";
-alignement.instructions[2] = "<b>Objectif</b> : Tracer un chemin possédant le coût optimal 3.<br><br>"
-    + "<b>Astuce</b> : pour vous aider à déterminer un alignement optimal, le coût du chemin choisi s’affiche sur le nœud d’arrivée et cet affichage est maintenu quand vous décidez de revenir sur un nœud précédent (flèche retour orange) pour choisir une autre direction. Vous pouvez ainsi constater facilement si vous êtes en mesure d'améliorer un coût précédemment obtenu.";
-alignement.instructions[3] = "<b>Objectif</b> : Suivre pas à pas la première phase de l’algorithme.<br><br>"
-    + "<b>Explications</b> : Cliquer sur les flèches vertes du cadre Chemins pour suivre la progression de l’algorithme qui calcule les coûts des chemins optimaux arrivant à chaque nœud de la grille.";
-alignement.instructions[4] = "<b>Objectif</b> : Retrouver le ou les alignements optimaux en partant du nœud terminal.<br><br>"
-    + "<b>Explications</b>: Partir du nœud terminal (en bas à droite de la grille) et remonter au nœud origine (en haut à gauche) en choisissant à chaque fois (à l’aide des flèches du cadre Chemins) un nœud précédent dont le coût est compatible avec l'optimalité du nœud courant.";
-alignement.instructions[5] = "<b>Objectif</b> : Suivre pas à pas la première phase de l’algorithme.<br><br>"
-    + "<b>Explications</b> : Cliquer sur les flèches vertes du cadre Chemins pour suivre la seconde phase de l’algorithme.<br>"
+alignement.instructions[2] = "<strong>Objectif</strong> : Tracer un chemin possédant le coût optimal 3.<br><br>"
+    + "<strong>Astuce</strong> : pour vous aider à déterminer un alignement optimal, le coût du chemin choisi s’affiche sur le nœud d’arrivée et cet affichage est maintenu quand vous décidez de revenir sur un nœud précédent (flèche retour orange) pour choisir une autre direction. Vous pouvez ainsi constater facilement si vous êtes en mesure d'améliorer un coût précédemment obtenu.";
+alignement.instructions[3] = "<strong>Objectif</strong> : Suivre pas à pas la première phase de l’algorithme.<br><br>"
+    + "<strong>Explications</strong> : Cliquer sur les flèches vertes du cadre Chemins pour suivre la progression de l’algorithme qui calcule les coûts des chemins optimaux arrivant à chaque nœud de la grille.";
+alignement.instructions[4] = "<strong>Objectif</strong> : Retrouver le ou les alignements optimaux en partant du nœud terminal.<br><br>"
+    + "<strong>Explications</strong>: Partir du nœud terminal (en bas à droite de la grille) et remonter au nœud origine (en haut à gauche) en choisissant à chaque fois (à l’aide des flèches du cadre Chemins) un nœud précédent dont le coût est compatible avec l'optimalité du nœud courant.";
+alignement.instructions[5] = "<strong>Objectif</strong> : Suivre pas à pas la première phase de l’algorithme.<br><br>"
+    + "<strong>Explications</strong> : Cliquer sur les flèches vertes du cadre Chemins pour suivre la seconde phase de l’algorithme.<br>"
     + "Suivre plus particulièrement les étapes où plusieurs nœuds peuvent être choisis, reflétant l’existence de plusieurs alignements optimaux, donc de même coût.";
