@@ -130,7 +130,11 @@
         //Initialisation
         alignement.init();
         //chargement de l'étape
-        alignement.changerEtape((getURLParameter('etape') !== null) ? getURLParameter('etape') : 1);
+        initial_step = (getURLParameter('etape') !== null) ? getURLParameter('etape') : 1;
+        alignement.changerEtape(parseInt(initial_step));
+        for (step = 1 ; step <= initial_step ; step = step + 1) {
+            $("#etape" + step).show();
+        }
     });
 </script>
 <!-- Fin du grain -->
